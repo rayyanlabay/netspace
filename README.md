@@ -5,3 +5,5 @@ This project involves designing a system to store an enterprise’s intellectual
 Future extensions may include implementing RAID configurations for redundancy and performance, as well as developing custom networking protocols to optimize data transfer and reliability.
 
 made with C/C++ using all best practices including OOP, OOD, SOLID, Design Patterns.
+
+<img src="images/main_draw.png" width="50%"/>
