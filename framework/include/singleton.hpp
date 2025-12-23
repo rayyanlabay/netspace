@@ -1,12 +1,5 @@
-/*
-Description:
-Author: HRD31
-Reviewer: -
-Version:
-    v0.1 - For mentor approval
-*/
-#ifndef __HRD3_SINGLETON_HPP__
-#define __HRD3_SINGLETON_HPP__
+#ifndef __SINGLETON_HPP__
+#define __SINGLETON_HPP__
 
 #include <mutex>
 #include <memory>
@@ -16,7 +9,7 @@ Version:
 // Must define default Ctor
 // Default Ctor must be declared in private
 // Using class must declare Singleton as a friend
-namespace hrd31
+namespace abc
 {
 
     template <typename T>
@@ -83,6 +76,6 @@ namespace hrd31
     template <typename T>
     std::mutex Singleton<T>::s_mutex;
 
-} // namespace hrd31
+} // namespace abc
 
-#endif /* __HRD3_SINGLETON_HPP__ */
+#endif /* __SINGLETON_HPP__ */

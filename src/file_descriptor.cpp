@@ -1,14 +1,3 @@
-/*
-status:
-
-     done:
-     exceptions
-
-     todo:
-     modern
-     include commentry
-     general commentry 
-*/
 
 #include <string>
 #include <iostream>
@@ -19,7 +8,7 @@ status:
 #include "file_descriptor.hpp"
 #include "utils.h"
 
-namespace hrd31
+namespace abc
 {
     void FileDescriptor::CloseFD() // may throw
     {
@@ -89,4 +78,4 @@ namespace hrd31
             // empty on purpose
         }
     }
-} // namespace hrd31
+} // namespace abc

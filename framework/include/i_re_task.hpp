@@ -1,17 +1,9 @@
-/* -----------------------------------------------------------------------------
-Description: Request engine task
-Author: HRD31
-Reviewer: Itzik
-Version:
-    v0.1 - For mentor approval
-    v0.2 - Mentor approved
------------------------------------------------------------------------------ */
-#ifndef __HRD31_I_RE_TASK_HPP__
-#define __HRD31_I_RE_TASK_HPP__
+#ifndef __I_RE_TASK_HPP__
+#define __I_RE_TASK_HPP__
 
 #include "i_task.hpp"
 
-namespace hrd31
+namespace abc
 {
 //note: for using this interface for creating tasks you have to provide
 // std::shared_ptr<IRETask> CreateFunc(ARGS) - not member function
@@ -28,6 +20,6 @@ private:
     virtual void Execute() = 0;
 };
 
-}//namespace hrd31
+}//namespace abc
 
-#endif //__HRD31_I_RE_TASK_HPP__
+#endif //__I_RE_TASK_HPP__

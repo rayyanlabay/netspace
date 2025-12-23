@@ -1,18 +1,11 @@
-/*
-Description: File storage
-Author: HRD31
-Reviewer:
-Version:
-    v0.1 - For mentor approval
-*/
 
-#ifndef __HRD31_FILE_STORAGE_HPP__
-#define __HRD31_FILE_STORAGE_HPP__
+#ifndef __FILE_STORAGE_HPP__
+#define __FILE_STORAGE_HPP__
 
 #include "i_storage.hpp"
 #include "driver_data.hpp"
 
-namespace hrd31
+namespace abc
 {
     class FileError : public StorageError
     {
@@ -33,6 +26,6 @@ namespace hrd31
         int m_fd;
         void *m_storage;
     };
-} // namespace hrd31
+} // namespace abc
 
-#endif //__HRD31_FILE_STORAGE_HPP_
+#endif //__FILE_STORAGE_HPP_

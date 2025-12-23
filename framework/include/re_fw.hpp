@@ -1,14 +1,5 @@
-/* -----------------------------------------------------------------------------
-Description: Request Engine Frame-Work
-Author: HRD31
-Reviewer: Itzik
-Version:
-    v0.1 - For mentor approval
-    v0.2 - Mentor approved
-    v0.2.1 - class Stop and Pause are changed to PauseTask and StopTask
------------------------------------------------------------------------------ */
-#ifndef __HRD31_RE_FW_HPP__
-#define __HRD31_RE_FW_HPP__
+#ifndef __RE_FW_HPP__
+#define __RE_FW_HPP__
 
 #include <string> // std::string
 #include <memory> //std::shared_ptr, std::make_shared
@@ -29,7 +20,7 @@ Version:
 
 #include "utils.h"
 
-namespace hrd31
+namespace abc
 {
     enum
     {
@@ -200,6 +191,6 @@ namespace hrd31
         m_reactor = std::thread(&RequestEngine<KEY, ARGS>::ReactorThread, this);
     }
 
-} // namespace hrd31
+} // namespace abc
 
-#endif //__HRD31_RE_FW_HPP__
+#endif //__RE_FW_HPP__

@@ -22,7 +22,7 @@ private:
     int x;
 };
 
-using namespace hrd31;
+using namespace abc;
 
 int main()
 {

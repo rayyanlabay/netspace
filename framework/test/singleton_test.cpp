@@ -14,7 +14,7 @@ public:
     int x;
 };
 
-using namespace hrd31;
+using namespace abc;
 
 A *g_b;
 void ThreadFunc()

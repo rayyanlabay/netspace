@@ -1,13 +1,6 @@
-/*
-Description:
-Author: HRD31
-Reviewer:
-Version:
-    v0.1 - For mentor approval
-*/
 
-#ifndef __HRD31_SERIALIZABLE_TEXT_HPP__
-#define __HRD31_SERIALIZABLE_TEXT_HPP__
+#ifndef __SERIALIZABLE_TEXT_HPP__
+#define __SERIALIZABLE_TEXT_HPP__
 
 #include <cstddef>
 #include <memory>
@@ -16,7 +9,7 @@ Version:
 #include "i_serializable.hpp"
 #include "driver_data.hpp"
 
-namespace hrd31
+namespace abc
 {
 
     class SerializableText : public ISerializable
@@ -34,6 +27,6 @@ namespace hrd31
         Buffer Serialize(std::shared_ptr<DriverData> data_) override;
     };
 
-} // namespace hrd31
+} // namespace abc
 
-#endif //__HRD31_SERIALIZABLE_TEXT_HPP__
+#endif //__SERIALIZABLE_TEXT_HPP__

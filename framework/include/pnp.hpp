@@ -1,13 +1,5 @@
-/* -----------------------------------------------------------------------------
-Description:
-Author: HRD31
-Reviewer: Itzik
-Version:
-    v0.1 - For mentor approval
-    v0.2 - Approved
------------------------------------------------------------------------------ */
-#ifndef __HRD31_PLUG_N_PLAY_HPP__
-#define __HRD31_PLUG_N_PLAY_HPP__
+#ifndef __PLUG_N_PLAY_HPP__
+#define __PLUG_N_PLAY_HPP__
 
 #include <string> //std::string
 #include <thread> //std::thread
@@ -15,7 +7,7 @@ Version:
 
 #include "msg_broker.hpp"
 
-namespace hrd31
+namespace abc
 {
 
     class PlugNPlay
@@ -70,6 +62,6 @@ namespace hrd31
         std::vector<void *> m_handles;
     };
 
-} // namespace hrd31
+} // namespace abc
 
-#endif //__HRD31_PLUG_N_PLAY_HPP__
+#endif //__PLUG_N_PLAY_HPP__

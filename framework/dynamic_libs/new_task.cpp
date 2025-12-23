@@ -3,7 +3,7 @@
 #include "singleton.hpp"
 #include "i_task.hpp"
 
-class A : public hrd31::ITask
+class A : public abc::ITask
 {
 public:
     void Execute() override
@@ -31,7 +31,7 @@ private:
     int x;
 };
 
-using namespace hrd31;
+using namespace abc;
 
 void __attribute__((constructor)) my_init(void)
 {

@@ -1,14 +1,5 @@
-/* -----------------------------------------------------------------------------
-Description:
-Author: HRD31
-Reviewer: Itzik
-Version:
-    v0.1 - For mentor approval
-    v0.2 - Mentor approved
-    v0.2.1 - class Stop and Pause are changed to PauseTask and StopTask
------------------------------------------------------------------------------ */
-#ifndef __HRD31_THREAD_POOL_HPP__
-#define __HRD31_THREAD_POOL_HPP__
+#ifndef __THREAD_POOL_HPP__
+#define __THREAD_POOL_HPP__
 
 #include <memory>     // shared ptr
 #include <vector>     // vector
@@ -19,7 +10,7 @@ Version:
 #include "waitable_pq.hpp"
 #include "i_task.hpp"
 
-namespace hrd31
+namespace abc
 {
     class ITask;
 
@@ -63,6 +54,6 @@ namespace hrd31
         bool is_stopeed;
     };
 
-} // namespace hrd31
+} // namespace abc
 
-#endif //__HRD31_THREAD_POOL_HPP__
+#endif //__THREAD_POOL_HPP__

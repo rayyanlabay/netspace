@@ -1,16 +1,9 @@
-/* -----------------------------------------------------------------------------
-Description: Message broker (Publisher-subscriber)
-Author: HRD31
-Reviewer: Itzik
-Version:
-    v0.1 - For mentor approval
------------------------------------------------------------------------------ */
-#ifndef __HRD31_MSG_BROKER_HPP__
-#define __HRD31_MSG_BROKER_HPP__
+#ifndef __MSG_BROKER_HPP__
+#define __MSG_BROKER_HPP__
 
 #include <vector>
 #include <algorithm>
-namespace hrd31
+namespace abc
 {
 
     template <typename MSG>
@@ -76,9 +69,9 @@ namespace hrd31
         DoStop m_stop_func;
     };
 
-} // namespace hrd31
+} // namespace abc
 
-namespace hrd31
+namespace abc
 {
 
     template <typename MSG>
@@ -159,6 +152,6 @@ namespace hrd31
         }
     }
 
-} // namespace hrd31
+} // namespace abc
 
-#endif //__HRD31_MSG_BROKER_HPP__
+#endif //__MSG_BROKER_HPP__

@@ -1,18 +1,11 @@
-/* -----------------------------------------------------------------------------
-Description: Waitable thread safe priority queue
-Author: HRD31
-Reviewer: Itzik
-Version:
-    v0.2 - Mentor approved
------------------------------------------------------------------------------ */
-#ifndef __HRD31_WAITABLE_PQ_HPP__
-#define __HRD31_WAITABLE_PQ_HPP__
+#ifndef __WAITABLE_PQ_HPP__
+#define __WAITABLE_PQ_HPP__
 
 #include <queue>
 #include <mutex>
 #include <condition_variable>
 
-namespace hrd31
+namespace abc
 {
 
     template <typename T, typename Container = std::vector<T>,
@@ -78,6 +71,6 @@ namespace hrd31
     {
         return m_queue.size();
     }
-} // namespace hrd31
+} // namespace abc
 
-#endif //__HRD31_WAITABLE_PQ_HPP__
+#endif //__WAITABLE_PQ_HPP__

@@ -1,13 +1,6 @@
-/*
-Description:
-Author:
-Reviewer:
-Version:
-    v0.1 - For mentor approval
-*/
 
-#ifndef __HRD31_I_STORAGE_HPP__
-#define __HRD31_I_STORAGE_HPP__
+#ifndef __I_STORAGE_HPP__
+#define __I_STORAGE_HPP__
 
 #include <cstddef> /* size_t */
 #include <memory>
@@ -16,7 +9,7 @@ Version:
 #include "driver_data.hpp"
 #define UNUSED(x) (void)x
 
-namespace hrd31
+namespace abc
 {
     class StorageError : public std::runtime_error
     {
@@ -36,6 +29,6 @@ namespace hrd31
         virtual void Read(std::shared_ptr<DriverData> read_data_) const = 0;
         virtual void Write(std::shared_ptr<DriverData> write_data_) = 0;
     };
-} // namespace hrd31
+} // namespace abc
 
-#endif //__HRD31_I_STORAGE_HPP__
+#endif //__I_STORAGE_HPP__

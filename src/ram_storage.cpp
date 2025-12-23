@@ -1,10 +1,3 @@
-/*
-Description:
-Author:
-Reviewer:
-Version:
-    v0->1 - For mentor approval
-*/
 
 #include <cstddef> /* size_t */
 
@@ -12,7 +5,7 @@ Version:
 #include "ram_storage.hpp"
 #include "driver_data.hpp"
 
-namespace hrd31
+namespace abc
 {
     RAMStorage::RAMStorage(size_t size_) : m_storage(size_)
     {
@@ -49,4 +42,4 @@ namespace hrd31
         }
     }
     // doesnt throw
-} // namespace hrd31
+} // namespace abc

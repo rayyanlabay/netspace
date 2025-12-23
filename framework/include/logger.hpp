@@ -1,20 +1,12 @@
-/*
-Description: Synchronous logger for multithreaded environment
-Author: HRD31
-Reviewer: Itzik
-Version:
-    v0.1 - For mentor approval
-    v0.1.1 - Mentor approval
-*/
-#ifndef __ILRD_HRD31_LOGGER__
-#define __ILRD_HRD31_LOGGER__
+#ifndef __LOGGER__
+#define __LOGGER__
 
 #include <string>  //std::string
 #include <fstream> //std::ofstream
 
 #include "singleton.hpp"
 
-namespace hrd31
+namespace abc
 {
 
     class Logger
@@ -53,6 +45,6 @@ namespace hrd31
 
     };
 
-} // namespace hrd31
+} // namespace abc
 
-#endif /* __ILRD_HRD31_LOGGER__ */
+#endif /* __LOGGER__ */

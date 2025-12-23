@@ -1,16 +1,10 @@
-/* 
-DESCRIPTION:    thread pool test
-AUTHOR:         Rayan
-VERSION:        
-    v0.1
- */
 #include <iostream> // cout
 #include <unistd.h> // sleep
 #include <chrono> // chrono::seconds
 #include <thread> // std thread
 #include "thread_pool.hpp"
 
-using namespace hrd31;
+using namespace abc;
 
 class SimpleTask : public ITask
 {

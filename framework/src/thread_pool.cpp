@@ -1,13 +1,7 @@
-/*
-DESCRIPTION:    thread pool implementation
-AUTHOR:         Rayan
-VERSION:
-    v0.1
- */
 #include <iostream> // cout
 #include "thread_pool.hpp"
 
-namespace hrd31
+namespace abc
 {
     class ThreadPool::PauseTask : public ITask
     {
@@ -214,4 +208,4 @@ namespace hrd31
         return hcsize == 0 ? 1 : hcsize;
     }
 
-} // namespace hrd31
+} // namespace abc

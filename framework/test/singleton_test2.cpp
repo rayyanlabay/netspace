@@ -7,7 +7,7 @@
 
 int *g_i;
 
-using namespace hrd31;
+using namespace abc;
 
 int main()
 {

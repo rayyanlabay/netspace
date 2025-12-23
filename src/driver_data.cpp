@@ -1,10 +1,3 @@
-/*
-Description:
-Author:
-Reviewer:
-Version:
-    v0.1 - For mentor approval
-*/
 
 #include <cstddef> //size_t
 #include <linux/nbd.h>
@@ -33,7 +26,7 @@ u_int64_t ntohll(u_int64_t a)
 #endif
 #define htonll ntohll
 
-namespace hrd31
+namespace abc
 {
     DriverData::DriverData(nbd_request &request_) : 
         m_type((ntohl(request_.type) == NBD_CMD_READ ? READ : WRITE)),
@@ -44,4 +37,4 @@ namespace hrd31
         m_data(m_len)
     {}
     // may throw bad_alloc, bad_read
-} // namespace hrd31
+} // namespace abc

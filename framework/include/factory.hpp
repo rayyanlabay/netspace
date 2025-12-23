@@ -1,18 +1,11 @@
-/* -----------------------------------------------------------------------------
-Description: Generic factory for runtime object creation
-Author: HRD31
-Reviewer: Itzik
-Version:
-    v0.1 - For mentor approval
------------------------------------------------------------------------------ */
-#ifndef __HRD31_FACTORY_HPP__
-#define __HRD31_FACTORY_HPP__
+#ifndef __FACTORY_HPP__
+#define __FACTORY_HPP__
 
 #include <functional>    //std::function
 #include <unordered_map> //std::unordered_map
 #include "singleton.hpp"
 
-namespace hrd31
+namespace abc
 {
     // Use instructions:
     // KEY must support comparison operators
@@ -50,6 +43,6 @@ namespace hrd31
     {
         return m_operations.at(key_)(args_);
     }
-} // namespace hrd31
+} // namespace abc
 
-#endif //__HRD31_FACTORY_HPP__
+#endif //__FACTORY_HPP__

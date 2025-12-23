@@ -1,12 +1,5 @@
-/*
-Description:
-Author:
-Reviewer:
-Version:
-    v0.1 - For mentor approval
-*/
-#ifndef __HRD31_DRIVER_DATA_HPP__
-#define __HRD31_DRIVER_DATA_HPP__
+#ifndef __DRIVER_DATA_HPP__
+#define __DRIVER_DATA_HPP__
 
 #include <cstddef> //size_t
 
@@ -17,7 +10,7 @@ Version:
 #include "ISerializable.hpp"
 
 
-namespace hrd31
+namespace abc
 {
 typedef enum {READ, WRITE} req_type_t;
 typedef enum {SUCCESS, FAIL} status_t;
@@ -38,6 +31,6 @@ struct DriverData : public ISerializable
     std::vector<char> m_data;
 };
 
-}//namespace hrd31
+}//namespace abc
 
-#endif //__HRD31_DRIVER_DATA_HPP__
+#endif //__DRIVER_DATA_HPP__

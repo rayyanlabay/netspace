@@ -1,13 +1,6 @@
-/*
-Description: config wrapper
-Author: HRD31
-Reviewer:
-Version:
-    v0.1 - For mentor approval
-*/
 
-#ifndef __HRD31_CONFIG_HPP__
-#define __HRD31_CONFIG_HPP__
+#ifndef __CONFIG_HPP__
+#define __CONFIG_HPP__
 
 #include <memory>
 #include <unordered_map>
@@ -19,7 +12,7 @@ using json = nlohmann::json;
 
 #include "singleton.hpp"
 
-namespace hrd31
+namespace abc
 {
     class Config
     {
@@ -61,6 +54,6 @@ namespace hrd31
         friend class Singleton<Config>;
     };
 
-} // namespace hrd31
+} // namespace abc
 
-#endif //__HRD31_I_CONFIG_HPP__
+#endif //__I_CONFIG_HPP__

@@ -2,7 +2,7 @@
 #include <fcntl.h>
 #include "file_storage.hpp"
 
-namespace hrd31
+namespace abc
 {
 
     FileStorage::FileStorage(size_t size_)
@@ -25,4 +25,4 @@ namespace hrd31
 
     int m_fd;
     void *m_storage;
-} // namespace hrd31
+} // namespace abc

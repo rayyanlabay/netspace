@@ -1,11 +1,3 @@
-/* -----------------------------------------------------------------------------
-Description:
-Author: HRD31
-Reviewer: Itzik
-Version:
-    v0.1 - For mentor approval
-    v0.2 - Approved
------------------------------------------------------------------------------ */
 #include <dlfcn.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -24,7 +16,7 @@ Version:
 
 #include "pnp.hpp"
 
-namespace hrd31
+namespace abc
 {
 
     enum
@@ -100,4 +92,4 @@ namespace hrd31
         m_handles.push_back(dlopen(file_name_.c_str(), RTLD_LAZY));
     }
 
-} // namespace hrd31
+} // namespace abc

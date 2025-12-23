@@ -1,7 +1,3 @@
-// status:
-
-//      done:
-//      all
 
 #ifndef __FILE_DESC_HPP__
 #define __FILE_DESC_HPP__
@@ -10,7 +6,7 @@
 #include <unistd.h>
 #include <string>
 
-namespace hrd31
+namespace abc
 {    
     class FDError : std::runtime_error
     {
@@ -41,5 +37,5 @@ private:
     size_t *m_count;
 };
 
-} // namespace hrd31
+} // namespace abc
 #endif /* __FILE_DESC_HPP__ */

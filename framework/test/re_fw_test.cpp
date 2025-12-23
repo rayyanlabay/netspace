@@ -1,15 +1,9 @@
-/*
-DESCRIPTION: request engine framework test
-AUTHOR: Rayan
-VERSION:
-    v0.1
- */
 
 #include <iostream> // cout
 
 #include "re_fw.hpp"
 
-using namespace hrd31;
+using namespace abc;
 
 class MyTask : public IRETask
 {

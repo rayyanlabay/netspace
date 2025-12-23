@@ -1,15 +1,7 @@
-/* -----------------------------------------------------------------------------
-Description: Request engine input source
-Author: HRD31
-Reviewer: Itzik
-Version:
-    v0.1 - For mentor approval
-    v0.2 - Mentor approved
------------------------------------------------------------------------------ */
-#ifndef __HRD31_I_INPUT_SRC_HPP__
-#define __HRD31_I_INPUT_SRC_HPP__
+#ifndef __I_INPUT_SRC_HPP__
+#define __I_INPUT_SRC_HPP__
 
-namespace hrd31
+namespace abc
 {
 
 template <typename KEY, typename ARGS> 
@@ -25,5 +17,5 @@ public:
     virtual int GetFd() = 0;
 };
 
-}//namespace hrd31
-#endif //__HRD31_I_INPUT_SRC_HPP__
+}//namespace abc
+#endif //__I_INPUT_SRC_HPP__

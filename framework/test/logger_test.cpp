@@ -1,15 +1,9 @@
-/* 
-DESCRIPTION:    thread pool test
-AUTHOR:         Rayan
-VERSION:        
-    v0.1
- */
 #include <thread> // thread
 #include <iostream> // ofstream, ostream
 #include "singleton.hpp" 
 #include "logger.hpp"
 
-using namespace hrd31;
+using namespace abc;
 
 void ThreadFunc1(Logger *log)
 {

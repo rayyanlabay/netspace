@@ -1,13 +1,7 @@
-/*
-Description: Network protocol
-Author: HRD31
-Reviewer:
-Version:
-    v0.1 - For mentor approval
-*/
 
-#ifndef __HRD31_I_NETWORK_PROTOCOL_HPP__
-#define __HRD31_I_NETWORK_PROTOCOL_HPP__
+
+#ifndef __I_NETWORK_PROTOCOL_HPP__
+#define __I_NETWORK_PROTOCOL_HPP__
 
 #include <memory>
 #include <mutex>
@@ -17,7 +11,7 @@ Version:
 #include "i_serializable.hpp"
 #include "driver_data.hpp"
 
-namespace hrd31
+namespace abc
 {
 
     class NetworkProtocolError : public NetspaceError
@@ -44,6 +38,6 @@ namespace hrd31
         std::mutex m_mutex;
     };
 
-} // namespace hrd31
+} // namespace abc
 
-#endif //__HRD31_I_NETWORK_PROTOCOL_HPP__
+#endif //__I_NETWORK_PROTOCOL_HPP__

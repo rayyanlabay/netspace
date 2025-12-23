@@ -1,13 +1,6 @@
-/*
-Description: Master driver communicator
-Author: HRD31
-Reviewer:
-Version:
-    v0.1 - For mentor approval
-*/
 
-#ifndef __HRD31_MASTER_DRIVER_COMMUNICATOR_HPP__
-#define __HRD31_MASTER_DRIVER_COMMUNICATOR_HPP__
+#ifndef __MASTER_DRIVER_COMMUNICATOR_HPP__
+#define __MASTER_DRIVER_COMMUNICATOR_HPP__
 
 #include <mutex>
 #include <memory>
@@ -16,7 +9,7 @@ Version:
 #include "logger.hpp"
 #include "i_network_protocol.hpp"
 
-namespace hrd31
+namespace abc
 {
     class MasterDriverCommunicator : public IDriverCommunicator
     {
@@ -37,6 +30,6 @@ namespace hrd31
         std::shared_ptr<INetworkProtocol> m_protocol;
         Logger *m_logger;
     };
-} // namespace hrd31
+} // namespace abc
 
-#endif //__HRD31_MASTER_DRIVER_COMMUNICATOR_HPP__
+#endif //__MASTER_DRIVER_COMMUNICATOR_HPP__

@@ -1,5 +1,5 @@
-#ifndef __HRD31_NETSPACE_UDP_HPP__
-#define __HRD31_NETSPACE_UDP_HPP__
+#ifndef __NETSPACE_UDP_HPP__
+#define __NETSPACE_UDP_HPP__
 
 class NetspaceUdp
 {
@@ -12,4 +12,4 @@ class NetspaceUdp
 };
 
 
-#endif /* __HRD31_NETSPACE_UDP_HPP__ */
+#endif /* __NETSPACE_UDP_HPP__ */

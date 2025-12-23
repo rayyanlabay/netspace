@@ -1,13 +1,6 @@
-/*
-Description:
-Author: HRD31
-Reviewer:
-Version:
-    v0.1 - For mentor approval
-*/
 
-#ifndef __HRD31_I_SERIALIZABLE_HPP__
-#define __HRD31_I_SERIALIZABLE_HPP__
+#ifndef __I_SERIALIZABLE_HPP__
+#define __I_SERIALIZABLE_HPP__
 
 #include <cstddef>
 #include <memory>
@@ -15,7 +8,7 @@ Version:
 
 #include "driver_data.hpp"
 
-namespace hrd31
+namespace abc
 {
 
 class ISerializable
@@ -33,6 +26,6 @@ public:
     virtual Buffer Serialize(std::shared_ptr<DriverData> data_) = 0;
 };
 
-}//namespace hrd31
+}//namespace abc
 
-#endif //__HRD31_I_SERIALIZABLE_HPP__
+#endif //__I_SERIALIZABLE_HPP__

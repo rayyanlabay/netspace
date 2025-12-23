@@ -1,21 +1,6 @@
-/*
-Description: nbd driver communicator
-Author: Rayan
-Reviewer: -
-Version:
-    v0.1 - For mentor approval
-    v0.4 - upgrading legacy to modern cpp
-*/
 
-/*
-status:
-
-     done:
-     all
-*/
-
-#ifndef __HRD31_NBD_DRIVER_COMMUNICATOR_HPP__
-#define __HRD31_NBD_DRIVER_COMMUNICATOR_HPP__
+#ifndef __NBD_DRIVER_COMMUNICATOR_HPP__
+#define __NBD_DRIVER_COMMUNICATOR_HPP__
 
 #include <csignal> // sigaction, singal, sigaddset, sigemptyset, sigfullset
 
@@ -30,7 +15,7 @@ status:
 #include "logger.hpp"
 #include "file_descriptor.hpp"
 
-namespace hrd31
+namespace abc
 {
     class NBDError : public DriverError
     {
@@ -71,6 +56,6 @@ namespace hrd31
     };
 
     static volatile std::sig_atomic_t s_nbd_dev_to_disconnect;
-} // namespace hrd31
+} // namespace abc
 
-#endif //__HRD31_NBD_DRIVER_COMMUNICATOR_HPP__
+#endif //__NBD_DRIVER_COMMUNICATOR_HPP__

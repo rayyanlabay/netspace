@@ -1,13 +1,6 @@
-/*
-Description:
-Author:
-Reviewer:
-Version:
-    v0.1 - For mentor approval
-*/
 
-#ifndef __HRD31_RAM_STORAGE_HPP__
-#define __HRD31_RAM_STORAGE_HPP__
+#ifndef __RAM_STORAGE_HPP__
+#define __RAM_STORAGE_HPP__
 
 #include <cstddef> /* size_t */
 #include <vector>
@@ -16,7 +9,7 @@ Version:
 #include "i_storage.hpp"
 #include "driver_data.hpp"
 
-namespace hrd31
+namespace abc
 {
 class RAMError : public StorageError {};
 
@@ -34,6 +27,6 @@ public:
 private:
     std::vector<char> m_storage;
 };
-}//namespace hrd31
+}//namespace abc
 
-#endif //__HRD31_RAM_STORAGE_HPP__
+#endif //__RAM_STORAGE_HPP__

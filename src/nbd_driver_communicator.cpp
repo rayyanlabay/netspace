@@ -1,23 +1,3 @@
-/*
-Description: nbd driver communicator
-Author: Rayan
-Reviewer: -
-Version:
-    v0.1 - For mentor approval
-    v0.4 - upgrading legacy to modern cpp
-*/
-
-/*
-status:
-
-     done:
-     excpetions
-
-     todo:
-     modern
-     include commentry
-     general commentry
-*/
 
 #include <unistd.h> // close, read, write
 #include <fcntl.h>  // open
@@ -52,7 +32,7 @@ enum
     EXPLICIT_CALL_TO_SIG_HANLDER = 77
 };
 
-namespace hrd31
+namespace abc
 {
     /*******************
      internal namespace
@@ -355,4 +335,4 @@ namespace hrd31
         return int(m_sp[APP_SOCKET]);
     }
 
-} // namespace hrd31
+} // namespace abc

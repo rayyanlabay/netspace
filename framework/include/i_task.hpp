@@ -1,17 +1,9 @@
-/* -----------------------------------------------------------------------------
-Description:
-Author: HRD31
-Reviewer: Itzik
-Version:
-    v0.1 - For mentor approval
-    v0.2 - Mentor approved
------------------------------------------------------------------------------ */
-#ifndef __HRD31_ITASK_HPP__
-#define __HRD31_ITASK_HPP__
+#ifndef __ITASK_HPP__
+#define __ITASK_HPP__
 
 #include "thread_pool.hpp"
 
-namespace hrd31
+namespace abc
 {
 
     class ITask
@@ -47,6 +39,6 @@ namespace hrd31
     {
         return m_priority < other_.m_priority;
     }
-} // namespace hrd31
+} // namespace abc
 
-#endif //__HRD31_ITASK_HPP__
+#endif //__ITASK_HPP__

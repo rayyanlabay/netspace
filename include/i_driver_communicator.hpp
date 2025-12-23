@@ -1,20 +1,13 @@
-/*
-Description:
-Author:
-Reviewer:
-Version:
-    v0.1 - For mentor approval
-*/
 
-#ifndef __HRD31_I_DRIVER_COMMUNICATOR_HPP__
-#define __HRD31_I_DRIVER_COMMUNICATOR_HPP__
+#ifndef __I_DRIVER_COMMUNICATOR_HPP__
+#define __I_DRIVER_COMMUNICATOR_HPP__
 
 #include <memory> // shared_ptr
 #include <stdexcept> //std::runetime_error 
 
 #include "driver_data.hpp"
 
-namespace hrd31
+namespace abc
 {
 class DriverError : public std::runtime_error {
   public:
@@ -34,6 +27,6 @@ public:
     virtual void Disconnect() = 0;
     virtual int GetRequestFD() const = 0;
 };
-}//namespace hrd31
+}//namespace abc
 
-#endif //__HRD31_I_DRIVER_COMMUNICATOR_HPP__
+#endif //__I_DRIVER_COMMUNICATOR_HPP__

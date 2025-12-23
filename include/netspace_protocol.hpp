@@ -1,13 +1,6 @@
-/*
-Description: Netspace protocol
-Author: HRD31
-Reviewer:
-Version:
-    v0.1 - For mentor approval
-*/
 
-#ifndef __HRD31_NETSPACE_PROTOCOL_HPP__
-#define __HRD31_NETSPACE_PROTOCOL_HPP__
+#ifndef __NETSPACE_PROTOCOL_HPP__
+#define __NETSPACE_PROTOCOL_HPP__
 
 #include <memory>
 #include <csignal>
@@ -16,7 +9,7 @@ Version:
 #include "i_network_protocol.hpp"
 #include "driver_data.hpp"
 
-namespace hrd31
+namespace abc
 {
 
     class NetspaceProtocolError : public NetworkProtocolError
@@ -42,6 +35,6 @@ namespace hrd31
         size_t m_msg_size;
     };
 
-} // namespace hrd31
+} // namespace abc 
 
-#endif //__HRD31_NETSPACE_PROTOCOL_HPP__
+#endif //__NETSPACE_PROTOCOL_HPP__

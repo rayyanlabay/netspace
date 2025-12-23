@@ -4,7 +4,7 @@
 #include <fstream>
 #include "logger.hpp"
 
-namespace hrd31
+namespace abc
 {
     void Logger::SetLogLevel(log_level_t level_)
     {
@@ -40,4 +40,4 @@ namespace hrd31
         }
     }
 
-} // namespace hrd31
+} // namespace abc
