@@ -1,0 +1,7 @@
+#!/bin/bash
+
+sudo modprobbe -r nbd
+sudo modprobe nbd 
+sudo ./netspace_app /dev/nbd0 &
+sudo mkfs.ext4 /dev/nbd0
+sudo mount /dev/nbd0 /mnt
